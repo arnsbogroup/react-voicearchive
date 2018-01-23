@@ -1,8 +1,12 @@
 module.exports = {
     "env": {
-        "browser": true
+        "browser": true,
+        "es6": true
     },
     "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
     "rules": {
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
@@ -52,9 +56,18 @@ module.exports = {
         "init-declarations": "error",
         "jsx-quotes": "error",
         "key-spacing": "error",
-        "keyword-spacing": "error",
+        "keyword-spacing": [
+            "error",
+            {
+                "after": true,
+                "before": true
+            }
+        ],
         "line-comment-position": "error",
-        "linebreak-style": "error",
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
         "lines-around-comment": "error",
         "lines-around-directive": "error",
         "lines-between-class-members": "error",
@@ -166,7 +179,10 @@ module.exports = {
         "no-with": "error",
         "nonblock-statement-body-position": "error",
         "object-curly-newline": "error",
-        "object-curly-spacing": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
         "object-property-newline": "error",
         "object-shorthand": "error",
         "one-var": "error",
@@ -185,14 +201,16 @@ module.exports = {
         "prefer-spread": "error",
         "prefer-template": "error",
         "quote-props": "error",
-        "quotes": "error",
         "radix": "error",
         "require-await": "error",
         "require-jsdoc": "error",
         "rest-spread-spacing": "error",
-        "semi": "error",
+        "semi": "off",
         "semi-spacing": "error",
-        "semi-style": "error",
+        "semi-style": [
+            "error",
+            "last"
+        ],
         "sort-imports": "error",
         "sort-keys": "error",
         "sort-vars": "error",
@@ -206,7 +224,10 @@ module.exports = {
         "switch-colon-spacing": "error",
         "symbol-description": "error",
         "template-curly-spacing": "error",
-        "template-tag-spacing": "error",
+        "template-tag-spacing": [
+            "error",
+            "never"
+        ],
         "unicode-bom": [
             "error",
             "never"
