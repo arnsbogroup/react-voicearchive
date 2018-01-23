@@ -1,0 +1,10 @@
+{
+  "name": "voicearchive-ui",
+  "version": "1.0.0",
+  "description": "The VoiceArchive UI",
+  "main": "index.js",
+  "repository": "https://github.com/ArnsboMedia/voicearchive-ui",
+  "author": "Mads Lundholm <mads@madslundholm.dk>",
+  "license": "MIT",
+  "private": true
+}
