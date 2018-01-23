@@ -7,7 +7,15 @@
   "author": "Mads Lundholm <mads@madslundholm.dk>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore",
+    "lint:js": "npm run lint:eslint -- ."
+  },
   "dependencies": {
     "styled-components": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
   }
 }
