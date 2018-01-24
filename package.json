@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The VoiceArchive UI",
   "main": "lib/index.js",
-  "repository": "https://github.com/ArnsboMedia/voicearchive-ui",
+  "repository": "https://github.com/ArnsboMedia/react-voicearchive",
   "author": "Mads Lundholm <mads@madslundholm.dk>",
   "license": "MIT",
   "private": true,
