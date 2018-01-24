@@ -3,7 +3,7 @@ import React from 'react';
 /* eslint-enable no-unused-vars */
 import styled from 'styled-components';
 
-const baseUrl = 'https://branding.arnsbomedia.com/voicearchive.com/icon/';
+const baseUrl = 'https://branding.arnsbomedia.com/voicearchive/icon/';
 
 export default styled.img.attrs({
   alt: ({ alt }) => alt || "VoiceArchive",

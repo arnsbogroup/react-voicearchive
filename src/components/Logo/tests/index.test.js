@@ -41,6 +41,14 @@ describe('<Logo />', () => {
     expect(component.toJSON().props.src).toBe(expectedUrl);
   });
 
+  it('can overwrite the negative default value', () => {
+    const component = renderer.create(<Logo negative={true} />),
+      expectedUrl = 'https://branding.arnsbomedia.com/voicearchive/logo/' +
+        'without-tagline/as_medium_negative.png';
+
+    expect(component.toJSON().props.src).toBe(expectedUrl);
+  });
+
   it('has a default alt text', () => {
     const component = renderer.create(<Logo />);
 
