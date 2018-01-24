@@ -12,7 +12,8 @@
     "lint:eslint": "eslint --ignore-path .gitignore",
     "lint:js": "npm run lint:eslint -- .",
     "test": "NODE_ENV=test jest",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "install": "npm run build"
   },
   "dependencies": {
     "styled-components": "^3.0.2"
