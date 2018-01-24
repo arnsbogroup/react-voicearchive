@@ -10,13 +10,21 @@
   "scripts": {
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
-    "lint:js": "npm run lint:eslint -- ."
+    "lint:js": "npm run lint:eslint -- .",
+    "test": "NODE_ENV=test jest"
   },
   "dependencies": {
     "styled-components": "^3.0.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.16.0"
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.1.4",
+    "react": "^16.2.0",
+    "react-test-renderer": "^16.2.0"
   }
 }

@@ -1,12 +1,19 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
+    "plugins": [
+        "react"
+    ],
     "rules": {
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
@@ -51,8 +58,13 @@ module.exports = {
         "id-length": "error",
         "id-match": "error",
         "implicit-arrow-linebreak": "error",
-        "indent": "error",
-        "indent-legacy": "error",
+        "indent": [
+          2,
+          2,
+          {
+            "SwitchCase": 1
+          }
+        ],
         "init-declarations": "error",
         "jsx-quotes": "error",
         "key-spacing": "error",
@@ -189,7 +201,6 @@ module.exports = {
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",
         "operator-linebreak": "error",
-        "padded-blocks": "error",
         "padding-line-between-statements": "error",
         "prefer-arrow-callback": "error",
         "prefer-const": "error",
@@ -237,6 +248,8 @@ module.exports = {
         "wrap-iife": "error",
         "wrap-regex": "error",
         "yield-star-spacing": "error",
-        "yoda": "error"
+        "yoda": "error",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
     }
 };
