@@ -1,8 +1,9 @@
-import React from 'react';
+import styled from 'styled-components'
 
-export default () => <link
-  rel="icon"
-  href="https://branding.arnsbomedia.com/voicearchive/icon/as.png"
-  type="image/x-icon"
-/>
+export default styled.link.attrs({
+  href: 'https://branding.arnsbomedia.com/voicearchive/icon/as.png',
+  rel: 'icon',
+  type: 'image/x-icon'
+})`
 
+`;
