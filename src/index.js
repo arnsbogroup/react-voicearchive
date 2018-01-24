@@ -1,1 +1,1 @@
-export * from 'react-voicearchive';
+export * from './react-voicearchive';
